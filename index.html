@@ -1,315 +1,653 @@
-<!--
-  Follow the instructions written in comments to create your stunning portfolio
--->
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" type="image/png" href="./images/favlogo.png" />
 
-  <!-- Put your site title here -->
-  <title>
-    Lynjai Jimenez | A Web Developer based in Maryland, USA.
-  </title>
-  
-  <meta name="description" content="I am the owner of Intermedia Designs, LLC and a Web Developer based in Maryland, USA. With a passion for coding and a keen eye for design, I bring a wealth of expertise to every project.
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  Dedicated to crafting seamless, user-friendly websites and ensuring that clients receive their digital visions come to life with precision and flair.">
-  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-  <meta name="keywords" content="Lynjai Jimenez, CSS, HTML, html5, bootstrap, React, react, Front-End,front end, developer, web dev, coding, ui developer, graphic design, interface design, SEP, tech, e-commerce, intermedia, intermedia designs, contractor, contracting, backend developer, freelance, python, agile, azure,javascript,reactjs, nodejs, subcontractor, rails ruby, custom website, website, website design, fullstack, full stack developer, website builder, web development, website development, web developer, web designer, webdesign, ecommerce website, web design company, website creator, web design, responsive website, responsive web design, web page design, web developer salary, build a website, logo design, create a website, business logo, design agency, website maintenance, small business, small business website, web application,wordpress, workflow, wordpress design, workflow design, wix, shopify, square, commercial website, local business, local website, squarespace, web solutions, website banner design, professional website, user experience, user interface, UI design, UX design, ui/ux, business card design, looking for web developer, looking for web designer, woman owned, woman owned small business, woman owned web designer, woman-owned, enterprise website, enterprise web design, web developer resume" />
-  
-  <link rel="stylesheet" href="index.css" />
-  
+  <title>Lynjai Jimenez</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+ 
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@100;200;300;400&family=Rouge+Script&display=swap');
+  </style>
+
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
 <body>
 
-  <!-- ***** Header ***** -->
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
-  <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-          <li class="nav__item">
-            <a href="#about me" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/me.jpeg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Lynjai Jimenez</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://twitter.com/imdesignsllc" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.facebook.com/intermediadesigns" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/intermedia_designs/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://github.com/IntermediaDesigns" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+          <a href="https://www.linkedin.com/in/lynjai-jimenez-557202255/" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
-      </nav>
+      </nav><!-- .nav-menu -->
     </div>
-    <div class="header__text-box row">
-      <div class="header__text">
-        <h1 class="heading-primary">
-          <!-- Replace the following name with your name -->
-          <span>Lynjai Jimenez</span>
-        </h1>
-        <!-- Put a small paragraph about yourself -->
-        <p>I am the owner of Intermedia Designs, LLC and a Web Developer based in Maryland, USA. With a passion for coding and a keen eye for design, I bring a wealth of expertise to every project. <br><br>
+  </header><!-- End Header -->
 
-        Dedicated to crafting seamless, user-friendly websites and ensuring that clients receive their digital visions come to life with precision and flair.</p>
-        <a href="#contact" class="btn btn--pink">Contact Me</a>
-      </div>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Lynjai Jimenez</h1>
+      <p>I am <span class="typed" data-typed-items="a Front-End Web Developer, a Web Designer, the Owner of Intermedia Designs"></span></p>
     </div>
-  </header>
+  </section><!-- End Hero -->
 
-  <main role="main">
+  <main id="main">
 
-<!-- ***** Divider ***** -->
-<section class="container">
-  <div id="divider_id" class="website-divider-container-438530">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
 
-    <svg xmlns="http://www.w3.org/2000/svg" class="divider-img-438530" viewBox="0 0 1080 137" preserveAspectRatio="none">
-   <path d="M 0,137 V 59.03716 c 158.97703,52.21241 257.17659,0.48065 375.35967,2.17167 118.18308,1.69101 168.54911,29.1665 243.12679,30.10771 C 693.06415,92.25775 855.93515,29.278599 1080,73.61449 V 137 Z" style="opacity:0.85"></path>
-   <path d="M 0,10.174557 C 83.419822,8.405668 117.65911,41.78116 204.11379,44.65308 290.56846,47.52499 396.02558,-7.4328 620.04248,94.40134 782.19141,29.627636 825.67279,15.823104 1080,98.55518 V 137 H 0 Z" style="opacity:0.5"></path>
-   <path d="M 0,45.10182 C 216.27861,-66.146913 327.90348,63.09813 416.42665,63.52904 504.94982,63.95995 530.42054,22.125806 615.37532,25.210412 700.33012,28.295019 790.77619,132.60682 1080,31.125744 V 137 H 0 Z" style="opacity:0.25"></path>
- </svg>   
- 
- </div>
-</section>
+        <div class="section-title">
+          <h2>About</h2>
+          <p>I am the owner of Intermedia Designs, LLC and a Web Developer based in Maryland, USA. With a passion for coding and a keen eye for design, I bring a wealth of expertise to every project.
 
-    <!-- ***** Projects ***** -->
-
-    <section class="projects" id="projects">
-      <div class="row">
-        <h2>Projects</h2>
-        <div class="project__boxes">
-
-          <!-- Each div with the project__box class is a project. -->
-
-          <div class="project__box">
-            <div class="project__text">
-              <h3>Portfolio Template</h3>
-              <p>
-                A free Open Source Portfolio for anyone to use for free.
-              </p>
-              <ul class="project__list">
-                <li>HTML</li>
-                <li>SCSS</li>
-                <li>JavaScript</li>
-                <li>Parcel</li>
-              </ul>
-<!--Project 1-->
-              <div class="project__links">
-                <a href="https://nisar.surge.sh" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/nisarhassan12/portfolio" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="project__code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="project__image-box">
-              <img src="./images/project-1.png" class="project__image" alt="Project 1" />
-            </div>
-          </div>
-
-<!--Project 2-->
-          <div class="project__box">
-            <div class="project__text">
-              <h3>Calculator</h3>
-              <p>
-                Created a calculator web app that can perform basic mathematical operations like addition, subtraction, multiplication, and division.
-              </p>
-              <ul class="project__list">
-                <li>HTML</li>
-                <li>JavaScript</li>
-                <li>CSS</li>                
-              </ul>
-
-              <div class="project__links">
-                <a href="https://intermediadesigns.github.io/JS-Calculator/" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="project__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="project__image-box">
-              <img src="./images/Calculator.jpg" class="project__image" alt="Project 1" />
-            </div>
-          </div>
-
-<!--Project 3-->
-          <div class="project__box">
-            <div class="project__text">
-              <h3>Notificator</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
-              </p>
-              <ul class="project__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
-              </ul>
-
-              <div class="project__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="project__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="project__image-box">
-              <img src="./images/project-3.png" class="project__image" alt="Project 3" />
-            </div>
-          </div>
+          Dedicated to crafting seamless, user-friendly websites and ensuring that clients receive their digital visions come to life with precision and flair.</p><br><br>
         </div>
-      </div>
-    </section>
 
-    <!-- ***** Divider ***** -->
-    <section class="container">
-      <div id="divider_id" class="website-divider-container-949343">
-
-        <svg xmlns="http://www.w3.org/2000/svg" class="divider-img-949343" viewBox="0 0 1080 137" preserveAspectRatio="none">
-       <path d="M 0,137 V 59.03716 c 158.97703,52.21241 257.17659,0.48065 375.35967,2.17167 118.18308,1.69101 168.54911,29.1665 243.12679,30.10771 C 693.06415,92.25775 855.93515,29.278599 1080,73.61449 V 137 Z" style="opacity:0.85"></path>
-       <path d="M 0,10.174557 C 83.419822,8.405668 117.65911,41.78116 204.11379,44.65308 290.56846,47.52499 396.02558,-7.4328 620.04248,94.40134 782.19141,29.627636 825.67279,15.823104 1080,98.55518 V 137 H 0 Z" style="opacity:0.5"></path>
-       <path d="M 0,45.10182 C 216.27861,-66.146913 327.90348,63.09813 416.42665,63.52904 504.94982,63.95995 530.42054,22.125806 615.37532,25.210412 700.33012,28.295019 790.77619,132.60682 1080,31.125744 V 137 H 0 Z" style="opacity:0.25"></path>
-     </svg>   
-     
-     </div>
-    </section>
-
-    <!-- ***** Skills ***** -->
-
-    <section class="skills" id="skills">
-      <div class="row">
-        <h2>Skills</h2>
-        <div>
-          <ul class="skill__list">
-            <li class="Col1">HTML</li>
-            <li class="Col1">CSS</li>
-            <li class="Col1">Javascript</li>
-            <li class="Col1">Bootstrap</li>
-            
-            <li class="Col2">Frameworks and Libraries</li>
-            <li class="Col2">APIs</li>
-            <li class="Col2">Responsive Design</li>
-            <li class="Col2">Version Control & Git</li>
-
-            <li class="Col3">Testing & Debugging</li>
-            <li class="Col3">Cross-Browser Development</li>            
-            <li class="Col3">Reactjs</li>
-            <li class="Col3">Agile</li>
-
-            <li class="Col4">Python</li>
-            <li class="Col4">PHP</li>
-            <li class="Col4">SEO</li>
-            <li class="Col4">Web Design</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- ***** About ***** -->
-
-    <section class="about" id="about me">
-      <div class="row">
-        <h2>About Me</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
-            <p>
-              Hello! My name is Lynjai Jimenez. I am the owner of Intermedia Designs, LLC and a Web Developer based in Maryland, USA. With a passion for coding and a keen eye for design, I bring a wealth of expertise to every project. <br><br>
-
-              Dedicated to crafting seamless, user-friendly websites and ensuring that clients receive their digital visions come to life with precision and flair.
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/me1tr.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Front-End Web Developer &amp; Web Designer</h3>
+            <p class="fst-italic">
+              I'm well-versed in popular web development frameworks and libraries like React, and I'm adept at version control using Git and GitHub for efficient collaboration. My commitment to continuous learning keeps me at the forefront of emerging web technologies and best practices, ensuring I deliver robust, modern, and secure web solutions.             
             </p>
-            <!-- Provide a link to your resume -->
-            <a href="intermediadesigns.github.io/cv-resume/" class="btn">My Resume</a>
-          </div>
 
-          <div class="about__photo-container">
-            <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/me1tr.png" alt="Lynjai Jimenez" id="myphoto"/>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span><a href="https://www.intermediadesigns.com">www.intermediadesigns.com</a></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span><a href="tel:410-846-0943">410-846-0943</a></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Location:</strong> <span>Maryland, USA</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  
+                  <li><i class="bi bi-chevron-right"></i> <strong>Level:</strong> <span>Entry-Level</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span><a href="mailto:intermediadesignsllc@gmail.com">intermediadesignsllc@gmail.com</a></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+            </div>
+            <p>
+              Excellent collaboration and communication skills, enabling effective teamwork with designers, back-end developers, and clients to bring web projects to successful fruition. Adept at optimizing web performance and ensuring cross-browser compatibility to deliver exceptional user experiences. Seeking opportunities to contribute my expertise and creativity to forward-thinking projects in the field of web development.
+            </p>
           </div>
         </div>
+
       </div>
-    </section>
-  </main>
+    </section><!-- End About Section -->
 
-  <!-- ***** Contact ***** -->
+    <!-- ======= Certifications Section ======= -->
+    <section id="facts" class="facts">
+      <div class="container">
 
-  <section class="contact" id="contact">
-    <div class="row">
-      <h2>Get in Touch</h2>
-      <div class="contact__info">
-        <p>
-          Have any questions for me or would like more information about freelance or consulting work opportunities, feel free to contact me. The quickest way to reach out to me is via an email.
-        </p>
-        <!-- Replace the email with yours -->
-        <a href="mailto:intermediadesiignsllc@gmail.com" class="btn">Email</a>
+        <div class="section-title">
+          <h2>Certifications</h2>
+          <p>These certifications validate expertise in Front-End Web Develpment, UI/UX Design, Web Designing, illustrating a well-rounded skill set of skills obtained that reflect a deep understanding of web development concepts and technologies.  It underscores a commitment to continuous learning and the ability to create responsive and user-friendly web applications.</p>
+        </div>
 
-        <p>
-          Are you looking for a fast-performing and user-friendly responsive website to
-          represent your product or business? Looking to build your brand? Or need other web related services? Please fill out your business inquiry at Intermedia Designs.
-        </p>
+        <div class="row">
+          <div class="col-lg-6">
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <strong><a href="https://www.coursera.org/account/accomplishments/certificate/8SNFLY4L2UGU" target="_blank">HTML, CSS, and Javascript for Web Developers</a></strong> <span>- John Hopkins University</span> </li>
 
-        <a href="https://intermediadesigns.com/contact-us/" class="btn">Contact</a>
+              <li><i class="bi bi-chevron-right"></i> <strong><a href="https://www.coursera.org/account/accomplishments/certificate/EUZ9QND8P2SD" target="_blank">Version Control</a></strong> <span>- Meta</span></li>
+
+              <li><i class="bi bi-chevron-right"></i> <strong><a href="https://www.coursera.org/account/accomplishments/certificate/KXSWE2HX5L88" target="_blank">Programming with JavaScript</a></strong> <span>- Meta</span></li>
+
+              <li><i class="bi bi-chevron-right"></i> <strong><a href="https://www.coursera.org/account/accomplishments/certificate/RS3NHVAH3U4X" target="_blank">Introduction to Front-End Development</a></strong> <span>- Meta</span></li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>intermediadesignsllc@gmail.com</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+            </ul>
+          </div>
+        </div>
+
+        
+      </div>
+    </section><!-- End Certifications Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>In my coursework, I immersed myself in key subjects such as web development fundamentals, database management, and software engineering, gaining a strong theoretical grounding. Complementing this academic background, I have cultivated a proficiency in front-end technologies like HTML, CSS, and JavaScript, enabling me to craft captivating and responsive web interfaces. </p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">React <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">PHP <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">WordPress/CMS <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Photoshop <i class="val">95%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Illustrator <i class="val">95%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p>Skilled Front-End Web Developer with a proven track record of creating visually stunning and user-friendly websites. Adept at translating client needs into elegant, responsive, and interactive web designs. Proficient in a wide range of front-end technologies, including HTML, CSS, JavaScript, and popular frameworks like React. Strong attention to detail, a passion for clean and efficient code, and a commitment to staying up-to-date with industry trends.
+<br><br>
+          I am currently working towards completing a Bachelor's Degree in Business Administration with a minor in Web Design from the University of Maryland Global Campus, where I am gaining business and technical expertise for creating exceptional web experiences. 
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Summary</h3>
+            <div class="resume-item pb-0">
+              <h4>Lynjai Jimenez</h4>
+              <p><em>My education and professional experience have equipped me with a strong understanding of web development best practices, responsive design, and security principles, making me a versatile and dynamic contributor to web projects.
+              </em></p>
+              <ul>
+                <li>Maryland, USA</li>
+                <li><a href="tel:410-846-0943">410-846-0943</a></li>
+                <li><a href="mailto:intermediadesignsllc@gmail.com">Contact Email</a></li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Bachelor's Degree in Business Administration with minor in Web &amp; Digital Design</h4>
+              <h5>2018 - Present</h5>
+              <p><em>University of Maryland Global Campus</em></p>
+              <p>This degree prepares for a variety of positions in management and operations for-profit, nonprofit, and public-sector organizations and create digital works using industry-standard software, design theory, and efficient workflows.<br> <br>The coursework provided hands-on experiences in web design, virtual reality, augmented reality, electronic publishing, motion graphics, multimedia, animation, and graphic design.</p>
+            </div>
+            <div class="resume-item">
+              <h4>Associate of Arts in Art</h4>
+              <h5>Graduated 2018</h5>
+              <p><em>Howard Community College</em></p>
+              <p>Designed to prepare students transferring to a four-year institution to complete a bachelor’s degree in Studio Art. The main emphasis in this area of study is the development of fundamental principles, conceptual abilities, and technical skills.</p>
+            </div>
+            <div class="resume-item">
+              <h4>Associate of Arts in Graphic &amp; Interactive Design</h4>
+              <h5>Graduated 2018</h5>
+              <p><em>Howard Community College</em></p>
+              <p>Designed to prepare students transferring to a four-year institution to complete a bachelor’s degree in art or graphic design, web design, multimedia design, or interface design. The main emphasis in the graphic and interactive design area of study is the development of foundational principles, conceptual abilities, and technical skills.</p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Contracts Specialist II</h4>
+              <h5>2017 - Present</h5>
+              <p><em>Data Computer Corporation of America</em></p>
+              <p>Responsible for the following aspects as a Contracts Specialist II:</p>
+              <ul>
+                <li>Draft materials for Contract Kick-off meetings.</li>
+                <li>Review and execute Subcontract/Consultant Agreements, Task Order Documents, Non-Disclosure Agreements, Teaming Agreements, etc.</li>
+                <li>Assist in negotiations and contract awards.</li>
+                <li>Pre and post-award support.</li>
+                <li>Monitor contractor performance, including schedules, deliverables, reports, and milestones, as well as contractor compliance with terms of the contract.</li>
+                <li>Contract administration functions for contract awards in accordance.</li>
+                <li>Prepare and submit RFP documents and work with Proposal Team for submittal.</li>
+                <li>Assist with procurement actions for purchase orders and subcontracts.</li>
+                <li>Support programs, IT, finance, procurement, human resources, and business development departments.</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Contracts/Pricing Analyst & Assistant Facility Security Officer</h4>
+              <h5>2015 - 2017</h5>
+              <p><em>Syntonics, LLC</em></p>
+              <ul>
+                <li>Contracts/Sales/Accounting Support</li>
+                <ul>
+                  <li>Perform contracts administration and closeout activities on existing and expired contracts.</li>
+                  <li>Process Non‐Disclosure, Teaming, and Loaner Agreements.</li>
+                </ul>
+                <li>Export Control</li>
+                <ul>
+                  <li>Process all export license requests and act as the interface with the Department of State and Department of Commerce.</li>
+                  <li>TAA and Commodity Jurisdiction requests.</li>
+                </ul>
+                <li>Pricing</li>
+                <ul>
+                  <li>Prepare pricing worksheets for proposals.</li>
+                  <li>Complete Job Cost reports for applicable cost plus and T&M jobs.</li>
+                </ul>
+                <li>Security</li>
+                <ul>
+                  <li>Conduct self-assessments, meetings, and training for employees on security refreshers and procedures.</li>
+                  <li>Implement insider threat program.</li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon"><i class="bi bi-briefcase"></i></div>
+            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="bi bi-card-checklist"></i></div>
+            <h4 class="title"><a href="">Dolor Sitema</a></h4>
+            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="bi bi-bar-chart"></i></div>
+            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><i class="bi bi-binoculars"></i></div>
+            <h4 class="title"><a href="">Magni Dolores</a></h4>
+            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon"><i class="bi bi-brightness-high"></i></div>
+            <h4 class="title"><a href="">Nemo Enim</a></h4>
+            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Testimonials Section ======= 
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Testimonials</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Saul Goodman</h3>
+                <h4>Ceo &amp; Founder</h4>
+              </div>
+            </div><!-- End testimonial item 
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+              </div>
+            </div><!-- End testimonial item 
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+              </div>
+            </div><!-- End testimonial item --
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+              </div>
+            </div><!-- End testimonial item --
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+              </div>
+            </div><!-- End testimonial item --
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section> End Testimonials Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Have any questions for me or would like more information about  freelance or consulting work opportunities, feel free to contact me. The quickest way to reach out to me is via an email. <a href="mailto:intermediadesiignsllc@gmail.com" class="btn">Contact Me by Email</a><br><br>
+            
+          Are you looking for a fast-performing and user-friendly responsive website to represent your product or business? Looking to build your brand? Or need other web related services? Please fill out your business inquiry at Intermedia Designs.</p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+
+        <script>
+          hbspt.forms.create({
+          region: "na1",
+          portalId: "40235578",
+          formId: "1638e8f9-8a70-40c0-9969-a7dd47f8475d"
+          });
+        </script>
+        </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <br><strong><span><a href="https://www.intermediadesigns.com">Intermedia Designs, LLC</a></span></strong>
+      </div>
+      <div class="credits">        
+        <a href="https://bootstrapmade.com/">Site Credit</a>
       </div>
     </div>
-  </section>
+  </footer><!-- End  Footer -->
 
-  <!-- ***** Footer ***** -->
+  <a href="#about" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <footer role="contentinfo" class="footer">
-    <div class="row">
-      <!-- Update the links to point to your accounts -->
-      <ul class="footer__social-links">
-        <li class="footer__social-link-item">
-          <a href="https://twitter.com/imdesignsllc" title="Link to Twitter Profile">
-            <img src="./images/xlogo.png" class="footer__social-image" alt="Twitter">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://github.com/IntermediaDesigns" title="Link to Github Profile">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://www.facebook.com/intermediadesigns" title="Link to Facebook">
-            <img src="./images/facebook1.png" class="footer__social-image" alt="Codepen">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href=https://www.linkedin.com/in/lynjai-jimenez-557202255/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href=https://www.instagram.com/intermedia_designs/">
-            <img src="./images/instagram.png" title="Link to Instagram Profile" class="footer__social-image" alt="Instagram">
-          </a>
-        </li>
-      </ul>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
 
-      <p>
-        &copy; 2023 - Intermedia Designs, LLC - <a href="https://intermediadesigns.com/our-story/" class="link">Lynjai Jimenez</a>.
-      </p>
-      <div class="footer__github-buttons">
-        <iframe
-          src="https://ghbtns.com/github-btn.html?user=intermediadesigns&repo=Portfolio&type=watch&count=true"
-          frameborder="0" scrolling="0" width="170" height="20" title="Portfolio on GitHub">
-        </iframe>
-      </div>
-    </div>
-  </footer>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
-  <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
-  </a>
-  <script src="./index.js"></script>
- 
 </body>
 
 </html>
