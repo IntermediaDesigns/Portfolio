@@ -448,12 +448,24 @@ section {
   margin-right: 5px;
   color: #149ddd;
   line-height: 0;
+  margin-bottom: 20px;
 }
 
 .facts .row ul {
   list-style: none;
+  margin-bottom: 20px;
 }
 
+.sub1 {
+  list-style: circle;
+  margin-left: 30px;
+  padding-left: 10px;
+  margin-bottom: 0px;
+}
+
+.l1 {
+  margin-bottom: 10px;
+}
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
